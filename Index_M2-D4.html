@@ -30,8 +30,45 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+
+        #form-container {
+    border:2px solid grey;
+    width: 60%;
+    height: 50%;
+    padding: 20px;
+    position:absolute;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        }
+
+        #namelabel{
+            color: white;
+        }
+
+    </style>
   </head>
   <body>
+      <!-- Image and text -->
+<nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="/Assets/Strive_logo.png" width="60" height="60" class="d-inline-block align-top" alt="">
+    </a>
+  </nav>
+  <div id="form-container">
+      <label id="namelabel "for="name">Name of Student</label>
+      <input id="nameOfStudent" type="text" placeholder="Type name here">
+      <button type="button" class="btn btn-success d-block .my-2" id="submitName">Submit Name</button>
+
+  </div>
+
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -42,5 +79,6 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
+    <script src="IndexJavaM2D4.js"></script>
   </body>
 </html>
