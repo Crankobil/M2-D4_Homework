@@ -1,13 +1,21 @@
-let listOfNames = []
+
 const submitNamebutton = document.querySelector("#submitName")
+console.log(submitNamebutton)
 const studentName = document.querySelector("#nameOfStudent")
+let listOfNames = []
+
+window.onload = () => {
+
+console.log(studentName)
+    submitNamebutton.addEventListener("click", getNames)
+}
 
 const getNames = () => {
     let getStudentName = studentName.value
-    listofNames.push(getStudentName)
+    listOfNames.push(getStudentName)
     console.log(listOfNames)
 }
 
-submitNamebutton.addEventlistener("click", getNames)
+
 
 
